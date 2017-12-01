@@ -150,6 +150,7 @@ Indexing
 - Bug in :class:`Index`` construction from list of mixed type tuples (:issue:`18505`)
 - Bug in :class:`IntervalIndex` where empty and purely NA data was constructed inconsistently depending on the construction method (:issue:`18421`)
 - Bug in ``IntervalIndex.symmetric_difference()`` where the symmetric difference with a non-``IntervalIndex`` did not raise (:issue:`18475`)
+- Bug in ``TimeDeltaBlock._can_hold_element()`` where masked assignment of a timedelta series converts the series values to float64 (:issue:`18493`)
 
 I/O
 ^^^
